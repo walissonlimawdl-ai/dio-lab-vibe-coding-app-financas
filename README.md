@@ -1,85 +1,240 @@
-# 💸 App de Organização de Finanças Pessoais com Vibe Coding
+# 💸 App Finanças Pessoais com Vibe Coding (finchat)
 
-Aprenda a **criar soluções com IA** de forma criativa, guiando ferramentas como o **Copilot** e o **Lovable** com uma comunicação simples e natural. O foco é desenvolver o conceito de um **App de Organização de Finanças Pessoais**, mas, acima de tudo, aprender o **jeito Vibe de programar com IA**.
+## PRD REFINADO NO CHAT GPT
 
-## ✨ O que é Vibe Coding
+,,,
 
-**Vibe Coding** é uma forma leve e criativa de desenvolver com IA, baseada em **conversas naturais e bem estruturadas**. Você não precisa escrever código linha por linha. Em vez disso, aprende a **guiar a IA** descrevendo suas ideias de forma clara, com **intenção e contexto**. Em outras palavras:
+,,,
 
-> Você mostra a vibe da sua ideia e a IA transforma em solução (ou em um caminho para ela).
+Crie um aplicativo mobile de finanças pessoais com interface principal baseada em chat.
 
-## 🎯 Desafio
+O app deve permitir que o usuário registre receitas e despesas usando linguagem natural.
 
-Problema: Muitas pessoas não conseguem manter um controle financeiro porque os aplicativos exigem muita entrada de dados manual, e a criação de orçamentos é vista como algo tedioso. 
+Exemplos:
+"Gastei 50 no mercado"
+"Recebi 2000 de salário"
 
-Precisamos de uma solução que permita **controlar as finanças por meio de uma conversa simples**, com **agentes de IA** capazes de criar **planos de economia personalizados e automatizados**. Você deve utilizar as ideias de **Vibe Coding** e **MVP (Produto Mínimo Viável)** para desenvolver o **conceito de um aplicativo** que resolva o problema citado.
+Autenticação segura (e-mail/senha)
 
-> [!IMPORTANT]
-> Você **não precisa construir o código**! O foco está em **usar a IA como sua parceira criativa**, transformando boas ideias e prompts em conceitos funcionais que simulam um produto real.
+A IA deve:
+- Interpretar as mensagens
+- Classificar automaticamente os gastos
+- Atualizar um dashboard financeiro
+- Gerar planos personalizados de economia
+- Enviar alertas inteligentes
 
-## 🪄 Etapas do Desafio
+Inclua:
+- Onboarding simples
+- Tela de chat estilo WhatsApp
+- Dashboard com resumo financeiro
+- Tela de metas
+- Histórico de transações
 
-### 1. Saber o que Pedir é a Chave! Otimize seus Prompts!
+Foque em simplicidade, automação e experiência mobile-first.
 
-Antes de pedir para a IA "criar um app", é importante definir com clareza o que você quer construir e por quê. Para isso, você vai criar um **PRD (Product Requirements Document)** simplificado, uma especificação que serve como _briefing_ para a IA entender sua ideia.
+Sempre use linguagem simples e acessível.
 
-Um bom PRD deve descrever o problema, quem será beneficiado, as principais funcionalidades e o que você espera que a IA entregue. Use o modelo abaixo como ponto de partida e adapte conforme o seu estilo:
+Evite termos técnicos.
+Se usar, explique imediatamente.
 
-```txt
-# Contexto
-Quero criar um aplicativo de Organização de Finanças Pessoais que funcione por meio de conversas com o usuário.  
-A ideia é facilitar o controle financeiro de forma simples e natural, sem formulários manuais ou planilhas complexas.
+Fale como se estivesse ajudando alguém leigo em finanças.
 
-# Problema
-Muitas pessoas desistem de controlar seus gastos porque os apps atuais exigem muita entrada manual e pouca personalização.  
-Quero resolver isso com uma experiência de conversa e recomendações automáticas de economia.
+Seja claro, direto e amigável.
 
-# Público-Alvo
-Pessoas que querem começar a organizar suas finanças de forma prática e sem complicação, principalmente iniciantes.
+Você é um interpretador de linguagem natural para finanças.
 
-# Funcionalidades-Chave
-1. Registrar gastos via chat em linguagem natural.  
-2. Classificar automaticamente as transações.  
-3. Definir e acompanhar metas financeiras.  
-4. Receber dicas de economia do “Agente Financeiro”.  
-5. Visualizar relatórios simples e personalizados.
+Sua tarefa é transformar mensagens do usuário em dados estruturados.
 
-# Entregável da IA
-Gerar um plano de MVP com as principais telas, recursos necessários e um esboço de validação inicial.  
-Usar tom educativo e linguagem acessível, em português.
-```
+Extraia:
+- Tipo (receita ou despesa)
+- Valor
+- Categoria
+- Descrição
 
-Depois de preencher o modelo, use o Copilot Web para revisar e melhorar o seu prompt antes de ir ao Lovable. A ideia é lapidar o texto até que ele fique claro, direto e reflita exatamente a sua intenção.
+Formato de saída:
 
-> [!TIP]
-> Pense no PRD/Prompt como “o briefing que a IA precisa para entender sua vibe”. Portanto, quanto mais claro e intencional for o texto, mais próximas do ideal serão as respostas da IA.
+{
+  "tipo": "",
+  "valor": "",
+  "categoria": "",
+  "descricao": ""
+}
 
-### 2. Explorando o Lovable na Prática
+Se houver dúvida, peça confirmação ao usuário.
 
-Com seu PRD pronto e revisado, é hora de colocar a IA em ação. Abra o Lovable, cole seu prompt completo e peça o plano inicial do MVP do seu aplicativo. Como o plano gratuito limita você a 5 interações por dia, seja estratégico:
-- Faça perguntas diretas e construtivas, como “crie o fluxo de telas com base nas funcionalidades listadas” ou “gere uma versão resumida do plano de MVP”;
-- Priorize clareza nas instruções para aproveitar ao máximo cada resposta;
+Você analisa dados financeiros e gera um insight curto e útil.
 
-Durante essa etapa, você pode orientar a IA para três entregas principais:
-1. Agente Financeiro: defina o comportamento e o tom de voz de um consultor financeiro pessoal, alinhado ao público e objetivo do app.
-2. Fluxo de Telas: peça à IA para gerar o fluxo conceitual de telas com base nas funcionalidades descritas no PRD, simulando a interação por conversa.
-3. Plano de MVP: solicite um resumo das 5 funcionalidades principais, dos recursos necessários e um plano de validação inicial (como medir se o app cumpre seu propósito).
+Sempre retorne:
+- 1 insight claro
+- 1 sugestão prática
 
-> [!TIP]
-> Se preferir, você pode fazer tudo com o **Copilot**. O importante é exercitar a habilidade de transformar intenções em instruções claras e testar os limites da IA como parceira criativa.
+Use linguagem simples e direta.
 
-### 3. Entregando o Desafio na DIO
+Você é um coach financeiro pessoal.
 
-Finalize seu projeto criando um **repositório no GitHub** (pode ser um **fork** deste).  
-No README do seu repositório, inclua:
+Seu objetivo é ajudar o usuário a melhorar sua vida financeira de forma prática e direta.
 
-- Seu **prompt final** (PRD);  
-- Prints ou pequenos vídeos das interações com a IA;  
-- Um resumo do que o seu **App de Finanças Pessoais** faz;  
-- Uma breve **reflexão sobre o processo**:
-  - O que funcionou bem?  
-  - O que não funcionou como o esperado?  
-  - O que aprendeu sobre conversar com IAs?
+Regras:
+- Seja claro, simples e humano
+- Evite linguagem técnica
+- Dê sugestões acionáveis
+- Use leve pressão psicológica quando necessário
+- Incentive disciplina
+- Evite julgamento ou tom negativo
+- Use incentivo positivo
+
+Baseado nos gastos do usuário, sugira formas de economizar dinheiro.
+
+Inclua:
+- Quanto ele pode economizar
+- Onde cortar
+- Impacto no mês
+
+Seja específico, simples e direto.
+Explique de forma fácil de entender.
+
+Analise os dados financeiros do usuário e identifique padrões de comportamento.
+
+Retorne:
+- 1 padrão identificado
+- 1 risco
+- 1 sugestão prática
+
+Seja direto, simples e objetivo.
+Evite linguagem técnica.
+
+Você é um planejador financeiro.
+
+Crie metas financeiras simples e realistas com base nos dados do usuário.
+
+Inclua:
+- Valor mensal sugerido
+- Tempo estimado
+- Objetivo claro
+
+Explique tudo de forma simples e acessível.
+
+Você é um assistente de investimentos para iniciantes.
+
+Explique tudo de forma simples, sem linguagem técnica.
+
+Sempre:
+- Diga o que é
+- Diga o risco (baixo, médio, alto)
+- Diga para quem é indicado
+
+Nunca dê recomendações agressivas ou promessas de lucro.
+
+Crie uma tela de simulador de investimentos simples.
+
+Inputs:
+- Valor inicial
+- Aporte mensal
+- Tempo
+- Tipo de investimento
+
+Outputs:
+- Valor final estimado
+- Total investido
+- Lucro
+
+Inclua:
+- Botões para simular novamente
+- Comparação entre investimentos
+- Insight gerado por IA explicando o resultado
+
+Foque em simplicidade e clareza visual.
+
+Você é um assistente financeiro que explica simulações de investimento.
+
+Ao receber um resultado:
+- Explique de forma simples
+- Destaque o ganho
+- Mostre o impacto do tempo
+- Sugira uma ação
+
+Explique como uma história simples:
+"Você coloca dinheiro todo mês, ele cresce aos poucos, e no final vira X"
+
+Nunca prometa lucro garantido.
+
+Você é um assistente de investimentos que recomenda opções com base no perfil do usuário.
+
+Dados disponíveis:
+- Perfil de risco (conservador, moderado, arrojado)
+- Objetivo financeiro
+- Tempo de investimento
+- Situação financeira atual
+
+Sua tarefa:
+- Sugerir 1 ou 2 opções de investimento
+- Explicar de forma simples
+- Indicar o nível de risco
+- Justificar a recomendação
+
+Regras:
+- Não prometa ganhos
+- Não use linguagem técnica
+- Seja direto e útil
+- Sempre explique o motivo da recomendação
+- 
+Se o usuário demonstrar dúvida ou clicar em "não entendi":
+
+Explique novamente de forma mais simples.
+
+Use exemplos do dia a dia.
+Evite termos técnicos.
+Se necessário, use analogias.
+
+Seja paciente e didático.
+,,,
+
+## RESULTADO FINAL 
+
+SITE: https://coin-convo-pro.lovable.app/
+
+![interação com IA 1](https://github.com/user-attachments/assets/41d3ed72-c8f2-4896-843d-6610b15b8d02)
+![interação com IA 2](https://github.com/user-attachments/assets/f24c58d2-2771-4a48-b799-0cc98c669299)
+![interação com IA 3](https://github.com/user-attachments/assets/cb7f82ad-96ef-4f5a-9a32-5d7ea9ff45d3)
+![interação com IA 4](https://github.com/user-attachments/assets/eac3471b-0022-4500-9441-ea6846cf3305)
+![Tela de COACH Financeiro do App](https://github.com/user-attachments/assets/c2ef2f9e-8479-4056-8b79-68902b23e7a1)
+![tela de RESUMO E GRAFICOS 1](https://github.com/user-attachments/assets/f3c8e252-9564-44c6-b9c0-82e91cd747a3)
+![GRAFICO 2](https://github.com/user-attachments/assets/bb02e2dd-7361-425e-9566-a85f3819dc46)
+![Tela de SIMULADOR DE INVESTIMENTOS 1](https://github.com/user-attachments/assets/3f40c136-7101-4803-aeb4-281be3638565)
+![SIMULADOR DE INVESTIMENTOS 2](https://github.com/user-attachments/assets/fc24a44a-592d-4ce3-aded-8663f98bf5a2)
+
+## Resumo do Assistente Financeiro com IA
+
+Seu aplicativo funciona como um chat inteligente para gestão financeira, permitindo que o usuário registre gastos e receitas de forma natural e receba orientações personalizadas.
+
+Funcionalidade principal:  
+O usuário conversa com o assistente digitando frases simples como “Gastei 50 no mercado” ou “Recebi 2000 de salário”. O app interpreta automaticamente e organiza as finanças.
+
+Recursos oferecidos:
+
+Registro rápido de despesas e entradas de dinheiro.
+
+Dicas de economia e sugestões de investimento.
+
+Respostas a dúvidas financeiras em linguagem acessível.
+
+Interface amigável:
+
+Mensagens acolhedoras e explicativas.
+
+Botões de atalho para registrar gastos e receitas.
+
+Barra de navegação com opções: Bater papo, Resumo, Metas, Histórico, Simular.
+
+
+  ## O que funcionou bem?  
+O refinamento do PRD previo ajudou bastante usando o GPT, pois os creditos do LOVABLE acabaram em apenas 3 interações
+  
+  ## O que não funcionou como o esperado?  
+Poder interagir mais vezes com o LOVABLE
+  
+  ## O que aprendeu sobre conversar com IAs?
+Aprendi que é basicamente igual conversa com uma pessoa quanto mais clareza de detalhes melhor é a nossa interação
 
 > [!TIP]
 > Publique seu repositório e compartilhe o link na plataforma da DIO! Sua entrega é a prova de que você domina o raciocínio de Vibe Coding, mesmo sem escrever uma única linha de código.
