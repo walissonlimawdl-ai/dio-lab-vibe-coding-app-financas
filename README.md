@@ -4,7 +4,7 @@
 
 ,,,
 
-,,,
+,,,markdow
 
 Crie um aplicativo mobile de finanças pessoais com interface principal baseada em chat.
 
@@ -235,9 +235,6 @@ Poder interagir mais vezes com o LOVABLE
   
   ## O que aprendeu sobre conversar com IAs?
 Aprendi que é basicamente igual conversa com uma pessoa quanto mais clareza de detalhes melhor é a nossa interação
-
-> [!TIP]
-> Publique seu repositório e compartilhe o link na plataforma da DIO! Sua entrega é a prova de que você domina o raciocínio de Vibe Coding, mesmo sem escrever uma única linha de código.
 
 ## 💬 Conclusão
 
